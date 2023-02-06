@@ -43,7 +43,7 @@ function Signup() {
             <span>Submit Now</span>
           </Button>
 
-          <div class="info">
+          <div className="info">
             Already have an account? <a href="login.html">Login</a> instead.
           </div>
         </Form>

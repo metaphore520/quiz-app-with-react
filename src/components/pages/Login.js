@@ -9,7 +9,7 @@ function Login() {
   return (
     <>
       <h1>Login to your account</h1>
-      <div class="column">
+      <div className="column">
         <Illustration imageSource={loginImage} alt="Login" />
         <Form className={`${classes.login}`}>
           <TextInput
@@ -23,7 +23,7 @@ function Login() {
             icon="lock"
           ></TextInput>
           <Button>Submit Now</Button>
-          <div class="info">
+          <div className="info">
             Already have an account? <a href="login.html">Login</a> instead.
           </div>
         </Form>
