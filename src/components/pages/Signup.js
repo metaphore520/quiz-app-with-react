@@ -1,3 +1,4 @@
+import signupImage from "../../assets/images/signup.svg";
 import classes from "../../styles/Signup.module.css";
 import Button from "../Button";
 import Checkbox from "../Checkbox";
@@ -10,7 +11,7 @@ function Signup() {
     <>
       <h1>Create an account</h1>
       <div className="column">
-        <Illustration />
+        <Illustration imageSource={signupImage} alt="Signup" />
         <Form className={`${classes.signup}`}>
           <TextInput
             type="text"
@@ -38,7 +39,9 @@ function Signup() {
 
           <Checkbox text="I agree to th terms &amp; conditions" />
 
-          <Button>Submit Now</Button>
+          <Button>
+            <span>Submit Now</span>
+          </Button>
 
           <div class="info">
             Already have an account? <a href="login.html">Login</a> instead.
