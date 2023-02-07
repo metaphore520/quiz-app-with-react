@@ -76,7 +76,7 @@ function SignupForm() {
         onChange={(e) => setAgree(e.target.value)}
       />
 
-      <Button>
+      <Button type="Submit" disabled={loading}>
         <span>Submit Now</span>
       </Button>
       {error && <div className="error">{error}</div>}
