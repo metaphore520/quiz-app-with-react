@@ -7,6 +7,7 @@ const app = initializeApp({
   storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
   appId: process.env.REACT_APP_ID,
+  databaseURL: process.env.REACT_APP_DATABASE_URL,
 });
 
 /*
@@ -23,7 +24,9 @@ const firebaseConfig = {
   projectId: "react-quiz-dev-61b47",
   storageBucket: "react-quiz-dev-61b47.appspot.com",
   messagingSenderId: "565275689202",
-  appId: "1:565275689202:web:89ec2cee3b47391340d06b"
+  appId: "1:565275689202:web:89ec2cee3b47391340d06b",
+   databaseURL: "https://react-quiz-dev-61b47-default-rtdb.asia-southeast1.firebasedatabase.app",
+
 };
 
 // Initialize Firebase
