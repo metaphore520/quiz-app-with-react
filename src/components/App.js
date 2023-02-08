@@ -23,7 +23,7 @@ function App() {
             </Route>
             <Route exact path="/" element={<PrivateRoute />}>
               <Route path="/result" element={<Result />}></Route>
-              <Route path="/quiz" element={<Quiz />}></Route>
+              <Route path="/quiz/:videoId" element={<Quiz />}></Route>
             </Route>
             <Route path="/login" element={<Login />}></Route>
           </Routes>

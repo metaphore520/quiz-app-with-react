@@ -17,10 +17,11 @@ function Videos() {
             setPage(page + 1);
           }}
           hasMore={hasMore}
+          loader="Loading....................."
         >
           {videos.map((video) =>
             video.noq > 0 ? (
-              <Link to="/quiz" key={video.youtubeID}>
+              <Link to={`/quiz/${video.youtubeID}`} key={video.youtubeID}>
                 <Video
                   title={video.title}
                   youtubeID={video.youtubeID}

@@ -46,7 +46,9 @@ function useVideoList(page) {
         setLoading(false);
       }
     }
-    fetchVideos();
+    setTimeout(() => {
+      fetchVideos();
+    }, 2000);
   }, [page]);
   return {
     error,
