@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { initializeApp } from "firebase/app";
 
 const app = initializeApp({
@@ -9,7 +10,7 @@ const app = initializeApp({
   appId: process.env.REACT_APP_ID,
   databaseURL: process.env.REACT_APP_DATABASE_URL,
 });
-
+/* eslint-disable no-unused-vars */
 /*
 
 // Import the functions you need from the SDKs you need
