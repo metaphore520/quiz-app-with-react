@@ -88,6 +88,7 @@ function Quiz() {
           <Answers
             options={qna[currentQuestion].options}
             handleAnswerChange={handleAnswerChange}
+            input
           />
           <ProgressBar
             next={nextQuestion}
@@ -95,7 +96,10 @@ function Quiz() {
             progress={percentage}
             submit={submit}
           ></ProgressBar>
-          <MiniPlayer></MiniPlayer>
+          <MiniPlayer
+            videoId={videoId}
+            title={qna[currentQuestion].title}
+          ></MiniPlayer>
         </>
       )}
     </>
