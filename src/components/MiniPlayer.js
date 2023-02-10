@@ -4,7 +4,6 @@ import classes from "../styles/MiniPlayer.module.css";
 function MiniPlayer({ videoId, title }) {
   const [status, setStatus] = useState(false);
   const buttonRef = useRef();
-  const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
   function toggleMiniPlayer() {
     if (status) {
       buttonRef.current.classList.remove(classes.floatingBtn);
@@ -30,8 +29,6 @@ function MiniPlayer({ videoId, title }) {
       >
         close
       </span>
-      {/* url={videoUrl} */}
-      {/* <ReactPlayer></ReactPlayer> */}
       <p>{title}</p>
     </div>
   );

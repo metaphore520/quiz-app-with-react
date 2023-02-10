@@ -96,10 +96,8 @@ function Quiz() {
             progress={percentage}
             submit={submit}
           ></ProgressBar>
-          <MiniPlayer
-            videoId={videoId}
-            title={qna[currentQuestion].title}
-          ></MiniPlayer>
+          {/* videoId={videoId} */}
+          <MiniPlayer title={qna[currentQuestion].title}></MiniPlayer>
         </>
       )}
     </>
