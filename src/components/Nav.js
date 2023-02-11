@@ -9,8 +9,8 @@ function Nav() {
       <ul>
         <li>
           <Link to="/" className={classes.brand}>
-            <img src={logo} alt="Learn with Sumit Logo" />
-            <h3>Learn with Sumit</h3>
+            <img src={logo} alt="Learn New Things Logo" />
+            <h3>Learn New Things</h3>
           </Link>
         </li>
       </ul>
