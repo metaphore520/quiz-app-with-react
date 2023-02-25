@@ -31,10 +31,10 @@ function useVideoList(page) {
         setLoading(true);
         const snapShot = await get(videoQuery);
         if (snapShot.exists()) {
-          setVideos((prevState) => [
-            ...prevState,
-            ...Object.values(snapShot.val()),
-          ]);
+          setVideos((prevState) => {
+            console.log(prevState);
+            return [...prevState, ...Object.values(snapShot.val())];
+          });
           setLoading(false);
           setError("");
         } else {

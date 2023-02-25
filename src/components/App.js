@@ -1,3 +1,5 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "font-awesome/css/font-awesome.css";
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AuthProvider } from "../contexts/AuthContext";
@@ -8,6 +10,7 @@ import Login from "./pages/Login";
 import Quiz from "./pages/Quiz";
 import Result from "./pages/Result";
 import Signup from "./pages/Signup";
+import UserProfile from "./pages/UserProfile";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
 
@@ -26,6 +29,7 @@ function App() {
               <Route path="/quiz/:videoId" element={<Quiz />}></Route>
             </Route>
             <Route path="/login" element={<Login />}></Route>
+            <Route path="/user/profile" element={<UserProfile />}></Route>
           </Routes>
         </Layout>
       </AuthProvider>

@@ -1,0 +1,12 @@
+{
+  "bloggers": {
+    "userId": {
+      "uid": {
+        "name": "rahat",
+        "profilePicture": "src/url"
+      }
+    }
+  },
+  "blogPost": {},
+  "comment": {}
+}

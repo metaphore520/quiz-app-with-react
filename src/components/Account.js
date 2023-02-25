@@ -22,6 +22,7 @@ function Account() {
         </>
       ) : (
         <>
+          <Link to="/user/profile">User Profile</Link>
           <Link to="/signup">Signup</Link>
           <Link to="/login">Login</Link>
         </>
